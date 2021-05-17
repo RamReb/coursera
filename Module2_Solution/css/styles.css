@@ -15,6 +15,14 @@ h1 {
   	color: navy;
 }
 
+h2 {
+	visibility: hidden;
+	margin: 0;
+	font-size: 0.6em;
+	text-align: center;
+	font-weight: normal;
+}
+
 footer {
 	clear: both;
 	font-size: 0.5em;
@@ -26,15 +34,12 @@ footer p {
 	margin: 0;
 }
 
-article {
-
-}
-
 div {
 	border: 1px solid black;
 	border-radius: 10px;
 	background-color: silver;
 	margin: 15px;
+	height: auto;
 }
 
 .menu_title {
@@ -47,15 +52,12 @@ div {
 	border-radius: 0 10px;
 	margin: -1px -1px 0 0;
 	padding: 5px;
-
 }
 
 .menu_title + p {
 	clear: both;
-	height: 70%;
 	padding: 10px 20px;
 	margin: 0px;
-	overflow: hidden;
 	font-size: 0.8em;
 }
 
@@ -84,6 +86,22 @@ div {
   		font-size: 16px;
   	}
 
+  	h2 {
+  		visibility: visible;
+  	}
+
+  	div:hover {
+		background-color: white;
+	}
+
+	div:hover .menu_title {
+		opacity: 100%
+	}
+
+	.menu_title {
+		opacity: 50%;
+	}
+
 	.menu_title + p {
 		font-size: 1em;
 	}
@@ -91,19 +109,18 @@ div {
   	.col-lg-4 {
     	width: 33.33%;
 	    float: left;
-  	}	
+  	}
+  	
 }
 
 /********** Tablet devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6, .col-md-12 {
-    float: left;
-  }
-  
   .col-md-6 {
     width: 50%;
+    float: left;
   }
   .col-md-12 {
     width: 100%;
+    float: left;
   }
 }
