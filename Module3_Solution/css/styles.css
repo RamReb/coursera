@@ -1,125 +1,106 @@
-/********** Base styles **********/
-* {
-  	box-sizing: border-box;
-}
-
 body {
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 24px;
+	font-size: 16px;
+	font-family: 'Rubik', sans-serif;
 }
 
-h1 {
-  	margin-bottom: 30px;
-  	text-align: center;
-  	font-size: 1.75em;
-  	color: navy;
+/** HEADER **/
+#header-nav {
+	background-color: gray;
+	border-radius: 0;
+	border: 0;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
 }
 
-h2 {
-	visibility: hidden;
+.navbar-brand {
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.navbar-brand h1 {
 	margin: 0;
-	font-size: 0.6em;
-	text-align: center;
-	font-weight: normal;
+	padding-bottom: 30px;
+	color: black;
+	font-weight: bold;
+	text-shadow: ;
 }
 
-footer {
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
 	clear: both;
-	font-size: 0.5em;
-	text-align: center;
+	margin-right: 30px;
+	margin-top: -42px;
+	margin-bottom: 0;
+}
+
+.navbar-collapse {
+	border: 0;
+}
+
+#nav-list {
+	color: black;
+	background-color: gainsboro;
+	border-top: 3px solid black;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#nav-list li {
+	/*font-weight: bold;*/
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+#nav-list li:hover {
 	font-style: italic;
 }
-
-footer p {
-	margin: 0;
+#nav-list hr {
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: 3px solid black;
+	border-radius: 2px;
 }
+/** END HEADER **/
 
-div {
-	border: 1px solid black;
-	border-radius: 10px;
-	background-color: silver;
-	margin: 15px;
+/** FOOTER **/
+.panel-footer p {
+	font-size: .7em;
+	line-height: .75
 }
+/** END FOOTER **/
 
-.menu_title {
-	text-align: center;
+/** HOME PAGE **/
+#our-menu-title, .menu-title {
 	font-weight: bold;
-	font-size: 1.25em;
-	width: 200px;
-	float: right;
-	border: 1px solid black;
-	border-radius: 0 10px;
-	margin: -1px -1px 0 0;
-	padding: 5px;
 }
 
-.menu_title + p {
-	clear: both;
-	padding: 10px 20px;
-	margin: 0px;
-	font-size: 0.8em;
-}
-
-.chicken {
-	background-color: #FF6347;
-}
-
-.beef {
-	background-color: #006400;
-	color: white;
-}
-
-.sushi {
-	background-color: #5F9EA0;
-}
-
-/* Simple Responsive Framework. */
-.row {
-	width: 100%;
+.menu-item-tile {
+	background-color: silver;
 	
 }
+h3.menu-title {
+	padding-top: 10px;
+	margin: 0;
+}
+h3.menu-title + p {
+	margin: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+/** END HOME PAGE **/
 
 /********** Desktop devices **********/
 @media (min-width: 992px) {
-  	body {
-  		font-size: 16px;
-  	}
-
-  	h2 {
-  		visibility: visible;
-  	}
-
-  	div:hover {
-		background-color: white;
-	}
-
-	div:hover .menu_title {
-		opacity: 100%
-	}
-
-	.menu_title {
-		opacity: 50%;
-	}
-
-	.menu_title + p {
-		font-size: 1em;
-	}
-
-  	.col-lg-4 {
-    	width: 33.33%;
-	    float: left;
-  	}
+  	
   	
 }
 
 /********** Tablet devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6 {
-    width: 50%;
-    float: left;
-  }
-  .col-md-12 {
-    width: 100%;
-    float: left;
-  }
+
 }
